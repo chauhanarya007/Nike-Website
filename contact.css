@@ -1,0 +1,151 @@
+.contactbody{
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+
+.outsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px 50px;
+    background-color: rgb(99, 99, 99);
+}
+
+.contact-box{
+	width: 100%;
+	text-align: center;
+	background-color: rgb(41, 41, 41);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-cont img{
+	height: auto;
+    width: 30rem;
+
+}
+
+.right-cont{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: rgb(0, 238, 255);
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.89);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+    border-radius: 10px;
+}
+
+.field:hover{
+	background-color: rgb(158, 158, 158);
+    
+}
+
+textarea{
+	min-height: 150px;
+    font-family: 'poppins', sans-serif;
+}
+.footer1{
+    margin-top: 0px;
+}
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: rgb(22, 188, 194);
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: teal;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+footer{
+    height: 30vh;
+}
+footer ul{
+    padding: 0;
+}
+footer ul li{
+    padding-top: 0;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+        display: flex;
+        flex-direction: column;
+	}
+    .outsec{
+        height: 100%;
+    }
+	.left-cont{
+		height: 50vh;
+        width: 100%;
+	}
+    .right-cont{
+        padding-top: 50vh;
+    }
+}
+@media screen and (max-width: 768px){
+    .left-cont{
+        height: auto;
+        width: 100%;
+    }
+    .left-cont img{
+		height: auto;
+        width: 100%;
+	}
+    .right-cont{
+        margin-top: 0;
+        padding-top: 0%;
+        font-size: 10px;
+    }
+    .field,.btn{
+        font-size: 10px;
+    }
+    .contactbody{
+        overflow-x: hidden;
+    }
+    footer{
+        height: 20vh;
+    }
+    .fab{
+        font-size: 20px;
+    }
+    
+}
